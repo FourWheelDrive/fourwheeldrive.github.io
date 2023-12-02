@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/menuStyle.css">
+    <link rel="stylesheet" href="styles/aboutStyle.css">
+    <link rel="stylesheet" href="styles/projectStyle.css">
+</head>
+
+<body>
+    <div class="p_wrapper">
+        <header>
+            <img src="res\layer1.png" class="layer1">
+            <img src="res\layer2.png" class="layer2">
+            <img src="res\layer3.png" class="layer3">
+            <img src="res\layer4.png" class="layer4">
+            <img src="res\layer5.png" class="layer5">
+
+            <!--Wrapper to keep text apart-->
+            <div class="foreground-1">
+                <h1 class="title">Jeffery Ma</h1>
+                <p class="title">BSc. Electrical Engineering Coop Year 2</p>
+            </div>
+        </header>
+        <!--Actual page content! Includes ABOUT ME and PROJECTS.-->
+        <div id="pageBody">
+            <!--<h1>Hello! It's nice to meet you.</h1>-->
+            <div id="pageBody__about">
+                <div id="pageBody__about__profile"  class="aboutDisplay">
+                    <h1 class="aboutStaticText">ME</h1>
+                    <p id="pageBody__about__profile__dynamicText"   class="aboutDynamicText">I'm a second-year BSc. Electrical Engineering Co-Op student at the University of Alberta eager to learn and apply new skills in electronics and digital technology.</p>
+                </div>
+                <div id="pageBody__about__passion"    class="aboutDisplay">
+                    <h1 class="aboutStaticText">PASSION</h1>
+                    <p id="pageBody__about__dream__dynamicText"     class="aboutDynamicText">I am a hobbyist coder and violinist. I am excited by innovative applications of modern technology, from the Mission to Psyche to web games in Three.js.</p>
+                </div>
+                <div id="pageBody__about__resume"   class="aboutDisplay">
+                    <h1 class="aboutStaticText">RESUME</h1>
+                    <p id="pageBody__about__resume__dynamicText"    class="aboutDynamicText"><a href="">My Resume</a></p>
+                </div>
+            </div>
+            <!--Projects part-->
+            <!--Project Div Template:
+            <div id="pageBody__projects__#" class="projectDisplay">
+                <div class="projectDisplayWrapper">
+                    <p>TITLE</p>
+                    <p class="projectDate"></p>
+                    <p class="projectDescription"></p>
+                    
+                </div>
+            </div>
+            -->
+            <div id="pageBody__projects">
+                <h1>"Where Has All My Time Gone?"</h1>
+                <div id="pageBody__projects__3" class="projectDisplay">
+                    <div class="projectDisplayWrapper">
+                        <p>Project Altair</p>
+                        <p class="projectDate">Sep 2023 - Present </p>
+                        <p class="projectDescription"></p>
+                    </div>
+                </div>
+                <div id="pageBody__projects__2" class="projectDisplay">
+                    <div class="projectDisplayWrapper">
+                        <p>Dreamweaver</p>
+                        <p class="projectDate">Jun 2022 - Present </p>
+                        <p class="projectDescription"></p>
+                    </div>
+                </div>
+                <div id="pageBody__projects__1" class="projectDisplay">
+                    <div class="projectDisplayWrapper">
+                        <p>Project Sirius</p>
+                        <p class="projectDate">Sep 2023 - Dec 2023</p>
+                        <p class="projectDescription"></p>
+                    </div>
+                </div>
+                <div id="pageBody__projects__4" class="projectDisplay">
+                    <div class="projectDisplayWrapper">
+                        <p>1283-Inspector</p>
+                        <p class="projectDate">Oct 2020 - May 2022</p>
+                        <p class="projectDescription"></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="nav-bar">
+        <!--Bar is split.-->
+        <div class="nav-bar-wrapper">
+            <button id="nav_bar--home" class="nav-bar-button"><span class="navButton-text">Δ</span></button>
+            <button id="nav_bar--about" class="nav-bar-button"><span class="navButton-text">About</span></button>
+            <button id="nav_bar--projects" class="nav-bar-button"><span class="navButton-text">Projects</span></button>
+        </div>
+        <div class="nav-bar-wrapper">
+            <button id="nav_bar--github" class="nav-bar-button"><span class="navButton-text">Github</span></button>
+            <button id="nav_bar--email" class="nav-bar-button"><span class="navButton-text">Email</span></button>
+            <button id="nav_bar--linkedin" class="nav-bar-button"><span class="navButton-text">LinkedIn</span></button>
+        </div>
+    </div>
+</body>
+
+</html>

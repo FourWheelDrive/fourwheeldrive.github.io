@@ -1,0 +1,66 @@
+/*PARALLAX EXAMPLES BELOW*/
+
+/* Fixed 2.5D Parallax Example
+#parallaxBackground{
+    background-image: url("res\\ParallaxImgTest.jpg");
+    min-height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+
+/*3D Parallax Example!*/
+/*Wrapper provides scroll context.*/
+.p_wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+/*Header positions background elements*/
+header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    /*Transform properties for 3d parallax*/
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+/*Stretch all items to fill page.*/
+.layer1,
+.layer2,
+.layer3,
+.layer4,
+.layer5{
+    position: absolute;
+    height: 105vh;
+    width: 100vw;
+    /*Cover keeps aspect ratio when stretching.*/
+    z-index: -2;
+    object-fit: cover;
+}
+
+.foreground-1{
+    transform: translateZ(-5px) scale(1.5);
+}
+.layer1{
+    transform: translateZ(-50px) scale(6);
+}
+.layer2{
+    transform: translateZ(-40px) scale(5);
+}
+.layer3{
+    transform: translateZ(-30px) scale(4);
+}
+.layer4{
+    transform: translateZ(-10px) scale(2);
+}
+.layer5{
+    transform: translateZ(0) scale(1);
+}

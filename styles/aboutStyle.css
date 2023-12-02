@@ -1,0 +1,27 @@
+#pageBody__about{
+    display: inline;
+    flex-grow: 2;
+    position: relative;
+    margin-right: 1%;
+
+    height: 50vh;
+
+    /*FOR TESTING*/
+    /*display: none;*/
+}
+
+#pageBody__about__titleWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#pageBody__about__title1{
+    font-size: 1rem;
+    margin-right: 1%;
+    padding-top: 0.75rem;
+}
+#pageBody__about__title2{
+    text-shadow: none;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+}

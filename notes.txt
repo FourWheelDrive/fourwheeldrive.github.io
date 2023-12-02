@@ -1,0 +1,21 @@
+Personal website project, to be done by December '23
+
+Intended technologies:
+- Parallax Scrolling
+- three.js ??
+- Colour palette:
+#F2B418
+#ECF8FD
+#AFCBD5
+#272838
+#815335
+
+#e0bb00 (gold)
+
+"I should be updating my LinkedIn, but I was too busy coding this instead."
+
+Start with a landing page, trigger a transition when they scroll.
+Random width rectangles start at bottom and go up.
+Use a large blob of these to hide the landing page and show the website.
+
+Alternatively, just scroll the landing page up like a presentation.

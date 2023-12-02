@@ -1,0 +1,70 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    height: 100%;
+    width: 100%;
+}
+body{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #272838;
+    color: white;
+
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    height: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+text{
+    font-family: Garamond, monospace;
+}
+p{
+    font-size: 1.75rem;
+    line-height: 3rem;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+
+    text-align: left;
+}
+
+.title{
+    color: black;
+}
+#pageBody{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#pageBody__contentWrapper{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}

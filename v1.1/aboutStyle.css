@@ -1,0 +1,45 @@
+#pageBody__about{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 20vh;
+    width: 100vw;
+}
+#pageBody__about__profile{
+    border-right: 1px solid white;
+}
+#pageBody__about__resume{
+    padding: 0;
+}
+#pageBody__about__passion{
+    border-right: 1px solid white;
+}
+
+.aboutStaticText{
+    max-width: 25vw;
+}
+
+/*Dynamic About Section*/
+.aboutDisplay{
+    padding: 0;
+    flex-grow: 2;
+    transition: flex-grow 1s;
+}
+.aboutDisplay:hover{
+    flex-grow: 3;
+    max-width: 100vw;
+}
+
+.aboutDisplay:hover > .aboutDynamicText{
+    opacity: 1;
+}
+.aboutDynamicText{
+    opacity: 0;
+    transition: 1s;
+    max-width: 25vw;
+    min-width: 25vw;
+
+    margin: auto;
+    padding: 0;
+}

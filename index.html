@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/menuStyle.css">
+    <link rel="stylesheet" href="styles/aboutStyle.css">
+    <link rel="stylesheet" href="styles/projectStyle.css">
+    <link rel="stylesheet" href="styles/decoStyle.css">
+    <link rel="stylesheet" href="styles\pageTransitionStyle.css">
+</head>
+
+<body onload="onload()">
+    <!--Landing page to be implemented at a later date.-->
+    <!--
+    <div id="landingPage_wrapper">
+    </div>
+    -->
+
+    <!--Dots and lines testing.-->
+    <!--
+        <span class="dot right"></span>
+    <span class="line"></span>
+    -->
+
+    <!--Actual page content! Includes ABOUT ME and PROJECTS.-->
+    <div id="pageBody">
+        <div id="pageBody__contentWrapper">
+
+            <div id="pageBody__about">
+                <div id="pageBody__about__titleWrapper">
+                    <p id="pageBody__about__title1">Hey, I'm </p>
+                    <h2 id="pageBody__about__title2">Jeffery Ma.</h2>
+                </div>
+                <p>I'm a second year BSc. Electrical Engineering Co-Op student at the University of Alberta.
+                    I love system interactions, whether they're in aircraft or video games! <br>
+                    I'm always looking to learn more about engineering and improve my skills.
+                    <br>
+                    <br>
+                    <a href="https://drive.google.com/file/d/1eYGSDznK_5fZtDGqcp9n0HzTMvONmQbW/view?usp=sharing" target="_blank">View my resume here!</a>
+                </p>
+            </div>
+
+            <!--
+                Project template:
+                <div id="pageBody__projects__#" class="projectPage">
+                    <div class="projectTitleWrapper">
+                        <h2 class="projectTitle"></h2>
+                        <p class="projectDate"></p>
+                    </div>
+                    <div class="projectContentWrapper">
+                        <p class="projectDescription"></p>
+                    </div>
+                </div>
+            -->
+
+            <div id="pageBody__projects__0" class="projectPage">
+                <div class="projectTitleWrapper">
+                    <h2 class="projectTitle">P. Altair</h2>
+                    <p class="projectDate">Aug 2023 — PRESENT</p>
+                </div>
+                <div class="projectContentWrapper">
+                    <p class="projectDescription">A pilot project for learning Node.js, Express.js, 
+                        and SQL to help with creating backend applications for dynamic websites.</p>
+                </div>
+            </div>
+            <!---->
+            <div id="pageBody__projects__1" class="projectPage">
+                <div class="projectTitleWrapper">
+                    <h2 class="projectTitle">P. Sirius</h2>
+                    <p class="projectDate">Sep — Dec 2023</p>
+                </div>
+                <div class="projectContentWrapper">
+                    <p class="projectDescription">The portfolio website you are currently viewing! An exercise in front-end CSS 
+                        transitions and web typography. <br>
+                        Although it is reasonably responsive on most desktop resolutions and screen sizes, I am planning on 
+                        revisiting this project to better support different screen types (mobile screens in particular).
+                    </p>
+                </div>
+            </div>
+            <!---->
+            <div id="pageBody__projects__2" class="projectPage">
+                <div class="projectTitleWrapper">
+                    <h2 class="projectTitle">Waste Eye</h2>
+                    <p class="projectDate">Nov 2023</p>
+                </div>
+                <div class="projectContentWrapper">
+                    <p class="projectDescription">Developed with a team of four students for HackTheChange 2023, implemented
+                        with Express.js, Google Cloud Vision API, and OpenAI GPT API. <br>
+                        <a class="projectLink" href="https://devpost.com/software/waste-eye" target="_blank">Check out our project page!</a>
+                    </p>
+                </div>
+            </div>
+            <!---->
+            <div id="pageBody__projects__3" class="projectPage">
+                <div class="projectTitleWrapper">
+                    <h2 class="projectTitle">Dreamweaver</h2>
+                    <p class="projectDate">Jun 2022 — PRESENT</p>
+                </div>
+                <div class="projectContentWrapper">
+                    <p class="projectDescription">A game built in vanilla JavaScript and my first experience with HTML5, CSS3, and JavaScript.
+                        It is functional but not complete, and I will revisit it soon. <br>
+                        <a class="projectLink" href="https://fourwheeldrive.github.io/dreamweaver/" target="_blank">Play Dreamweaver here!</a>
+                    </p>
+                </div>
+            </div>
+            <!---->
+            <div id="pageBody__projects__4" class="projectPage">
+                <div class="projectTitleWrapper">
+                    <h2 class="projectTitle">1283 Inspector</h2>
+                    <p class="projectDate">Oct 2020 — May 2022</p>
+                </div>
+                <div class="projectContentWrapper">
+                    <p class="projectDescription">Developed for the Entropy of Elsett using the Discord Client API and Google Sheets API as a Discord bot.
+                        Provided administrative support and kept track of writing projects to help direct feedback.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="transitionBox"></div>
+
+    <!--small navigation for projects-->
+    <!--on click, sends to some project page. **Needs a home button?-->
+    <div id="pageBody__projectBar">
+        <h2 id="pageBody__projectBar__header">Projects</h2>
+        <button id="pageBody__projectBar__0" class="project-menu-button">P. Altair</button>
+        <button id="pageBody__projectBar__1" class="project-menu-button">P. Sirius</button>
+        <button id="pageBody__projectBar__2" class="project-menu-button">Waste Eye</button>
+        <button id="pageBody__projectBar__3" class="project-menu-button">Dreamweaver</button>
+        <button id="pageBody__projectBar__4" class="project-menu-button">1283 Inspector</button>
+    </div>
+
+    <div id="navMenu">
+        <button id="navMenu__home" class="navMenuButton">JM</button>
+        <div id="navMenu__innerWrapper">
+            <button id="navMenu__gmail" class="navMenuButton"><a href="mailto:jefferygma@gmail.com">email</a></button>
+            <button id="navMenu__linkedin" class="navMenuButton"><a href="https://www.linkedin.com/in/jefferyjma/"
+                    target="_blank">linkedin</a></button>
+            <button id="navMenu__github" class="navMenuButton"><a href="https://github.com/FourWheelDrive/"
+                    target="_blank">github</a></button>
+        </div>
+    </div>
+
+    <div id="copyright">
+        <p class="copyrightText">Designed and Created by Jeffery Ma — <a class="projectLink copyrightText" href="https://github.com/FourWheelDrive/Project-Sirius" target="_blank">GitHub</a></p>
+    </div>
+</body>
+
+</html>
