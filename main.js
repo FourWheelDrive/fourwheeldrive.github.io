@@ -109,6 +109,10 @@ function flushCSS(element) { //flushes css to no transition.
     element.offsetHeight;
 }
 
+function updateWindowSize(){
+    document.getElementById("windowSize").innerHTML = `Current window size: ${window.innerWidth}px x ${window.innerHeight}px`;
+}
+
 function onload() {
     const handler = new windowManager();
 
@@ -118,6 +122,8 @@ function onload() {
         projectButtons[i].addEventListener("click", () => { handler.changeWindow(projectButtons[i].id) })
     }
     document.getElementById("navMenu__home").addEventListener("click", () => { handler.changeWindow("navMenu__home") });
+
+    setInterval(updateWindowSize, 10);
 }
 
 /*

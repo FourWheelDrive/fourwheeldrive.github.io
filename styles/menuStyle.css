@@ -107,8 +107,6 @@ a{
     position: absolute;
     bottom: 0;
     left: 3vw;
-
-    z-index: 10;
 }
 .copyrightText{
     font-size: 0.8rem;

@@ -1,4 +1,4 @@
 # Project-Sirius
-Personal project website. I am planning to introduce more rigorous responsive CSS for different screen resolutions soon.
+Personal project website. May introduce three.js elements in the future.
 
 Hello! I'm Jeffery. I like to use HTML5 to make games.
