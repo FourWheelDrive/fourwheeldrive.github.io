@@ -1,13 +1,24 @@
-#pageBody__about{
-    display: inline;
-    flex-grow: 2;
-    position: relative;
-    margin-right: 1%;
-
-    height: 50vh;
-
-    /*FOR TESTING*/
-    /*display: none;*/
+/*Mobile orientation*/
+@media (max-aspect-ratio: 3/4){
+    #pageBody__about{
+        display: inline;
+        flex-grow: 2;
+        position: relative;
+        margin-right: 1%;
+    
+        height: 80vh;
+    }
+}
+/*Desktop orientation*/
+@media (min-aspect-ratio: 3/4){
+    #pageBody__about{
+        display: inline;
+        flex-grow: 2;
+        position: relative;
+        margin-right: 1%;
+    
+        height: 50vh;
+    }
 }
 
 #pageBody__about__titleWrapper{
