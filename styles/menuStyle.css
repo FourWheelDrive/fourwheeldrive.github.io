@@ -179,7 +179,7 @@ a{
 
 /*COPYRIGHT DIV*/
 #copyright{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 3vw;
 

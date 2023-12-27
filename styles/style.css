@@ -6,6 +6,9 @@ html, body{
 
     height: 100%;
     width: 100%;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 @media (max-aspect-ratio: 3/4){
@@ -26,7 +29,10 @@ html, body{
         overflow-x: hidden;
         overflow-y: hidden;
     
-        padding: 2%;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 }
 @media (min-aspect-ratio: 3/4){
