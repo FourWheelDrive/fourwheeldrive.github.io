@@ -22,9 +22,8 @@ html, body{
         position: relative;
         box-sizing: border-box;
         overflow-x: hidden;
-        overflow-y: scroll;
+        overflow-y: hidden;
     
-        height: 100%;
         padding-top: 10vh;
         padding-bottom: 10vh;
         padding-left: 10vw;
