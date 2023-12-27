@@ -1,16 +1,38 @@
-.projectPage{
-    display: none;
-    position: relative;
-    margin-right: 1%;
-
-    height: 50vh;
-    width: 100%;
-    grid-template-areas:    "title"
-                            "description";
-    grid-template-rows: 1fr 5fr;
-
-    transition: opacity 1s;
+/*Mobile orientation*/
+@media (max-aspect-ratio: 3/4){
+    .projectPage{
+        display: none;
+        position: relative;
+        margin-right: 1%;
+    
+        height: 80vh;
+        width: 100%;
+        grid-template-areas:    "title"
+                                "description";
+        grid-template-rows: 1fr 5fr;
+    
+        transition: opacity 1s;
+    }
 }
+
+/*Desktop orientation*/
+@media (min-aspect-ratio: 3/4){
+    .projectPage{
+        display: none;
+        position: relative;
+        margin-right: 1%;
+    
+        height: 50vh;
+        width: 100%;
+        grid-template-areas:    "title"
+                                "description";
+        grid-template-rows: 1fr 5fr;
+    
+        transition: opacity 1s;
+    }
+}
+
+
 
 .projectTitleWrapper{
     grid-area: title;
@@ -23,6 +45,10 @@
     grid-area: description;
 }
 
+.projectTitle{
+    max-width: 50%;
+    overflow-wrap: break-word;
+}
 .projectDate{
     font-size: 1rem;
     margin-right: 10%;

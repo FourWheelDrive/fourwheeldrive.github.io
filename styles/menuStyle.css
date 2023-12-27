@@ -100,6 +100,8 @@ Also possible:
         background-color: transparent;
         border: 1px solid white;
         border-radius: 0vh 3vh 0vh 3vh;
+
+        overflow-wrap: break-word;
     
         color: white;
         font-size: 2rem;

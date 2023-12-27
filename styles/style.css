@@ -11,6 +11,7 @@ html, body{
     overflow-y: hidden;
 }
 
+/*Mobile orientation*/
 @media (max-aspect-ratio: 3/4){
     body{
         position: relative;
@@ -35,6 +36,7 @@ html, body{
         padding-right: 5vw;
     }
 }
+/*Desktop orientation*/
 @media (min-aspect-ratio: 3/4){
     body{
         position: relative;
