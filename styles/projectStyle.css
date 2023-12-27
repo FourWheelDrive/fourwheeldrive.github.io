@@ -3,7 +3,7 @@
     .projectPage{
         display: none;
         position: relative;
-        margin-right: 1%;
+        margin-right: 5vw;
     
         height: 60vh;
         width: 100%;
@@ -31,8 +31,6 @@
         transition: opacity 1s;
     }
 }
-
-
 
 .projectTitleWrapper{
     grid-area: title;
