@@ -1,46 +1,121 @@
+/*Aspect Ratio Split*/
+@media (max-aspect-ratio: 3/4){} /*<== Mobile orientation.*/
+@media (min-aspect-ratio: 3/4){} /*<== Prefer desktop orientation.*/
+/*
+Also possible:
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 4/3){}
+*/
+
+
 /*PROJECT MENU*/
-#pageBody__projectBar{
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-    z-index: 10;
+@media (max-aspect-ratio: 3/4){
+    #pageBody__projectBar{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        height: auto;
+
+        align-self: flex-start;
+
+        overflow-y: hidden;
+
+        z-index: 10;
+        
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #pageBody__projectBar__header{
+        border-right: 1px solid white;
+        margin: 0;
+        margin-bottom: 2vh;
+        width: 100%;
+    }
+    #pageBody__projectBar__wrapper{
+        overflow-x: scroll;
+
+        display: flex;
+        flex-direction: row;
+        height: 20vh;
+        
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
+    .project-menu-button{
+        width: auto;
+        padding: 4%;
+        margin-left: 2vw;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+
+        white-space: nowrap;
+    
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 0vh 3vh 0vh 3vh;
+    
+        color: white;
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: Garamond, monospace;
+    }
+    
+    .project-menu-button:hover{
+        border-style: solid double double solid;
+        border-width: 1px 3px 4px 1px;
+    }
+    .project-menu-button:active{
+        border-style: solid;
+    }
 }
-#pageBody__projectBar__header{
-    border-bottom: 1px solid white;
-    margin: 0;
-    margin-bottom: 2vh;
-    width: 100%;
+@media (min-aspect-ratio: 3/4){
+    #pageBody__projectBar{
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        z-index: 10;
+        
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    #pageBody__projectBar__header{
+        border-bottom: 1px solid white;
+        margin: 0;
+        margin-bottom: 2vh;
+        width: 100%;
+    }
+    
+    .project-menu-button{
+        width: 15vw;
+        padding: 4%;
+        margin-bottom: 2vh;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 0vh 3vh 0vh 3vh;
+    
+        color: white;
+        font-size: 2rem;
+        font-weight: 500;
+        font-family: Garamond, monospace;
+    }
+    
+    .project-menu-button:hover{
+        border-style: solid double double solid;
+        border-width: 1px 3px 4px 1px;
+    }
+    .project-menu-button:active{
+        border-style: solid;
+    }
 }
 
-.project-menu-button{
-    width: 15vw;
-    height: 7vh;
-    margin-bottom: 2vh;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 0vh 3vh 0vh 3vh;
-
-    color: white;
-    font-size: 2rem;
-    font-weight: 500;
-    font-family: Garamond, monospace;
-}
-
-.project-menu-button:hover{
-    border-style: solid double double solid;
-    border-width: 1px 3px 4px 1px;
-}
-.project-menu-button:active{
-    border-style: solid;
-}
 
 /*NAVIGATION MENU*/
 #navMenu{
@@ -104,9 +179,11 @@ a{
 
 /*COPYRIGHT DIV*/
 #copyright{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 3vw;
+
+    z-index: 10;
 }
 .copyrightText{
     font-size: 0.8rem;

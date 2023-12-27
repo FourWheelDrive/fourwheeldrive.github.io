@@ -1,3 +1,4 @@
+/*Use MOBILE LAYOUT for aspect ratios < 3/4 !!*/
 html, body{
     margin: 0;
     padding: 0;
@@ -6,23 +7,50 @@ html, body{
     height: 100%;
     width: 100%;
 }
-body{
-    position: relative;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    background-color: #272838;
-    color: white;
-
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-
-    height: 100%;
-    padding-left: 10vw;
-    padding-right: 10vw;
+@media (max-aspect-ratio: 3/4){
+    body{
+        position: relative;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        background-color: #272838;
+        color: white;
+    
+        position: relative;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    
+        height: 100%;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
+@media (min-aspect-ratio: 3/4){
+    body{
+        position: relative;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        background-color: #272838;
+        color: white;
+    
+        position: relative;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    
+        height: 100%;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
 }
 
 text{
