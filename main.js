@@ -118,11 +118,11 @@ function setFunction(){
 function setREM(){
     let newREM = 2*Math.log(window.innerWidth);
     document.documentElement.style.fontSize = `${newREM}px`;
-    document.getElementById("remSize").innerHTML = `Current REM: ${document.documentElement.style.fontSize}`;
 }
 function updateWindowSize(){
-    document.getElementById("windowSize").innerHTML = `Current window size: ${window.innerWidth}px x ${window.innerHeight}px`;
-    document.getElementById("aspectRatio").innerHTML = `Current window aspect ratio: ${(window.innerWidth/window.innerHeight).toFixed(2)}`;
+    document.getElementById("windowStats").innerHTML = `Current window size: ${window.innerWidth}px x ${window.innerHeight}px <br>
+    Current window aspect ratio: ${(window.innerWidth/window.innerHeight).toFixed(2)} <br>
+    Current REM: ${document.documentElement.style.fontSize}`;
 }
 
 function onload() {

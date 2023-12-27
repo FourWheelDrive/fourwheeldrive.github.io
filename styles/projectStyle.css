@@ -1,58 +1,63 @@
 /*Mobile orientation*/
-@media (max-aspect-ratio: 3/4){
-    .projectPage{
+@media (max-aspect-ratio: 3/4) {
+    .projectPage {
         display: none;
         position: relative;
         margin-right: 5vw;
-    
+
         height: 60vh;
         width: 100%;
-        grid-template-areas:    "title"
-                                "description";
+        grid-template-areas: "title"
+            "description";
         grid-template-rows: 1fr 5fr;
-    
+
         transition: opacity 1s;
     }
 }
 
 /*Desktop orientation*/
-@media (min-aspect-ratio: 3/4){
-    .projectPage{
+@media (min-aspect-ratio: 3/4) {
+    .projectPage {
         display: none;
         position: relative;
         margin-right: 1%;
-    
-        height: 50vh;
+
+        height: 70vh;
         width: 100%;
-        grid-template-areas:    "title"
-                                "description";
+        grid-template-areas: "title"
+            "description";
         grid-template-rows: 1fr 5fr;
-    
+
         transition: opacity 1s;
     }
 }
 
-.projectTitleWrapper{
+.projectTitleWrapper {
     grid-area: title;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.projectContentWrapper{
+
+.projectContentWrapper {
     grid-area: description;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-.projectTitle{
+.projectTitle {
     max-width: 50%;
     overflow-wrap: break-word;
 }
-.projectDate{
+
+.projectDate {
     font-size: 1rem;
     margin-right: 10%;
     padding-top: 0.75rem;
 }
 
-.projectLink{
+.projectLink {
     text-decoration: underline;
 }
