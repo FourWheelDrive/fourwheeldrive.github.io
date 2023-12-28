@@ -48,7 +48,7 @@
 }
 
 .projectTitle {
-    max-width: 50%;
+    max-width: 40vw;
     overflow-wrap: break-word;
 }
 
@@ -60,4 +60,9 @@
 
 .projectLink {
     text-decoration: underline;
+}
+
+.projectImage{
+    max-width: 100%;
+    height: auto;
 }
