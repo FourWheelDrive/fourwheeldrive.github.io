@@ -14,6 +14,10 @@
         transition: opacity 1s;
     }
 
+    .projectImageWrapperMain{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .projectImageWrapper{
         display: flex;
         flex-direction: column;
@@ -46,6 +50,10 @@
         transition: opacity 1s;
     }
 
+    .projectImageWrapperMain{
+        display: flex;
+        flex-direction: row;
+    }
     .projectImageWrapper{
         display: flex;
         flex-direction: row;
