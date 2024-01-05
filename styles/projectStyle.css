@@ -13,6 +13,21 @@
 
         transition: opacity 1s;
     }
+
+    .projectImageWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectImageCaption{
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    .projectImage{
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 /*Desktop orientation*/
@@ -29,6 +44,22 @@
         grid-template-rows: 1fr 5fr;
 
         transition: opacity 1s;
+    }
+
+    .projectImageWrapper{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .projectImageCaption{
+        margin-left: 5vw;
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    .projectImage{
+        max-width: 50%;
+        height: auto;
     }
 }
 
@@ -60,9 +91,4 @@
 
 .projectLink {
     text-decoration: underline;
-}
-
-.projectImage{
-    max-width: 100%;
-    height: auto;
 }

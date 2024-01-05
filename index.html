@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles/aboutStyle.css">
     <link rel="stylesheet" href="styles/projectStyle.css">
     <link rel="stylesheet" href="styles\pageTransitionStyle.css">
+
+    <link rel="stylesheet" href="styles\0Style.css">
 </head>
 
 <body onload="onload()">
@@ -59,17 +61,6 @@
                 </div>
             -->
 
-            <div id="pageBody__projects__4" class="projectPage">
-                <div class="projectTitleWrapper">
-                    <h2 class="projectTitle">P. Altair</h2>
-                    <p class="projectDate">Aug 2023 — PRESENT</p>
-                </div>
-                <div class="projectContentWrapper">
-                    <p class="projectDescription">A pilot project for learning Node.js, Express.js, 
-                        and SQL to help with creating backend applications for dynamic websites.</p>
-                </div>
-            </div>
-            <!---->
             <div id="pageBody__projects__3" class="projectPage">
                 <div class="projectTitleWrapper">
                     <h2 class="projectTitle">fourwheeldrive.github.io</h2>
@@ -77,7 +68,7 @@
                 </div>
                 <div class="projectContentWrapper">
                     <p class="projectDescription">The portfolio website you are currently viewing! An exercise in front-end CSS 
-                        transitions and web typography. <br>
+                        transitions and web typography. Built with vanilla HTML5, CSS3, and JavaScript!<br>
                         I am working on responsive web design! Try changing your window size, and visiting this site on mobile or desktop!
                     </p>
                     <p class="projectDescription" id="windowStats">--</p>
@@ -107,14 +98,16 @@
                     <p class="projectDate">Jun 2022 — PRESENT</p>
                 </div>
                 <div class="projectContentWrapper">
-                    <p class="projectDescription">A game built in vanilla JavaScript and my first experience with HTML5, CSS3, and JavaScript.
-                        It is functional but not complete, and I will revisit it soon. <br>
-
-                        Enemies and maps are procedurally generated, although a bit rudimentary. <br>
-                        My first foray into HTML drag-and-drop API! <br>
-
-                        <a class="projectLink" href="https://fourwheeldrive.github.io/dreamweaver/" target="_blank">Play Dreamweaver here!</a>
-                    </p>
+                    <div class="projectImageWrapper">
+                        <img id="inspectorSheet" class="projectImage" src="res\dreamweaver-home.png" alt="Where'd my spreadsheet go?">
+                        <p class="projectImageCaption">A game built in vanilla JavaScript and my first experience with HTML5, CSS3, and JavaScript.
+                            It is functional but not complete, and I will revisit it soon. <br>
+    
+                            Enemies and maps are procedurally generated, although a bit rudimentary. <br>
+                            My first foray into HTML drag-and-drop API! <br>
+    
+                            <a class="projectLink" href="https://fourwheeldrive.github.io/dreamweaver/" target="_blank">Play Dreamweaver here!</a></p>
+                    </div>
                 </div>
             </div>
             <!---->
@@ -124,11 +117,15 @@
                     <p class="projectDate">Oct 2020 — May 2022</p>
                 </div>
                 <div class="projectContentWrapper">
-                    <p class="projectDescription">Developed for the Entropy of Elsett using the Discord Client API and Google Sheets API as a Discord bot.
-                        Provided administrative support and kept track of writing projects to help direct feedback.
-                    </p>
-                    <img class="projectImage" src="res\inspector-profile.png" alt="I'd put the bot profile here, but I can't find it.">
-                    <img class="projectImage" src="res\inspector-spreadsheet.png" alt="Where'd my spreadsheet go?">
+                    <div class="projectImageWrapper">
+                        <img id="inspectorProfile" class="projectImage" src="res\inspector-profile.png" alt="I'd put the bot profile here, but I can't find it.">
+                        <p class="projectImageCaption">Developed for the Entropy of Elsett using the Discord Client API and Google Sheets API as a Discord bot.
+                            Provided administrative support and kept track of writing projects to help direct feedback.</p>
+                    </div>
+                    <div class="projectImageWrapper">
+                        <img id="inspectorSheet" class="projectImage" src="res\inspector-spreadsheet.png" alt="Where'd my spreadsheet go?">
+                        <p class="projectImageCaption">Google Sheet update automatically through Discord commands, using the Google Sheets API.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -142,7 +139,6 @@
     <div id="pageBody__projectBar">
         <h2 id="pageBody__projectBar__header">Projects</h2>
         <div id="pageBody__projectBar__wrapper">
-            <button id="pageBody__projectBar__4" class="project-menu-button">P. Altair</button>
             <button id="pageBody__projectBar__3" class="project-menu-button">fourwheeldrive.github.io</button>
             <button id="pageBody__projectBar__2" class="project-menu-button">Waste Eye</button>
             <button id="pageBody__projectBar__1" class="project-menu-button">Dreamweaver</button>

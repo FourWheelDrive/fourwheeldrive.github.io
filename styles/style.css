@@ -35,6 +35,17 @@ html, body{
         padding-left: 5vw;
         padding-right: 5vw;
     }
+
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2rem;
+    
+        font-weight: 400;
+        letter-spacing: 0.15rem;
+    
+        text-align: left;
+    }
 }
 /*Desktop orientation*/
 @media (min-aspect-ratio: 3/4){
@@ -57,6 +68,17 @@ html, body{
         padding-left: 10vw;
         padding-right: 10vw;
     }
+
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    
+        font-weight: 400;
+        letter-spacing: 0.15rem;
+    
+        text-align: left;
+    }
 }
 
 text{
@@ -69,33 +91,6 @@ p{
 h1{
     text-align: center;
     font-size: 3rem;
-}
-
-/*Mobile orientation*/
-@media (max-aspect-ratio: 3/4){
-    h2{
-        text-align: center;
-        font-size: 2rem;
-        line-height: 2rem;
-    
-        font-weight: 400;
-        letter-spacing: 0.15rem;
-    
-        text-align: left;
-    }
-}
-/*Desktop orientation*/
-@media (min-aspect-ratio: 3/4){
-    h2{
-        text-align: center;
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-    
-        font-weight: 400;
-        letter-spacing: 0.15rem;
-    
-        text-align: left;
-    }
 }
 
 .title{

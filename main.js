@@ -116,7 +116,7 @@ function setFunction(){
 }
 //SET functions
 function setREM(){
-    let newREM = 2*Math.log(window.innerWidth);
+    let newREM = 1.5*Math.log(window.innerWidth);
     document.documentElement.style.fontSize = `${newREM}px`;
 }
 function updateWindowSize(){
