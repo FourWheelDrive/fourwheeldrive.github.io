@@ -92,7 +92,7 @@ class windowManager {
             element.style.transitionDuration = "0s";
             flushCSS(element);
             element.style.opacity = "0.0";
-            element.style.display = "grid";
+            element.style.display = "flex";
         }
         //Fade in.
         element.style.transitionDuration = this.fadeDuration;
