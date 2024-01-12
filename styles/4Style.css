@@ -1,6 +1,14 @@
 #modBotProfile{
     height: auto;
 }
-#project4ImageWrapper{
-    width: 30vw;
+
+@media (max-aspect-ratio: 3/4){
+    #project4ImageWrapper{
+        max-width: 100vw;
+    }
+}
+@media (min-aspect-ratio: 3/4){
+    #project4ImageWrapper{
+        max-width: 30vw;
+    }
 }

@@ -23,11 +23,6 @@
         flex-direction: column;
     }
 
-    .projectImageCaption{
-        font-size: 1.75rem;
-        line-height: 3rem;
-    }
-
     .projectImage{
         max-width: 100%;
         width: auto;
@@ -63,8 +58,6 @@
 
     .projectImageCaption{
         margin-left: 5vw;
-        font-size: 1.75rem;
-        line-height: 3rem;
     }
 
     .projectImage{
