@@ -18,6 +18,7 @@ Also possible:
         margin-bottom: 3vh;
         align-self: flex-start;
         overflow-y: hidden;
+        overflow-x: auto;
 
         z-index: 10;
         
@@ -25,11 +26,24 @@ Also possible:
         margin-top: 0;
         margin-bottom: 0;
     }
-    #pageBody__projectBar__header{
-        border-right: 1px solid white;
+    #pageBody__projectBar__headerWrapper{
+        border-right: 4px solid white;
         margin: 0;
         margin-bottom: 2vh;
         padding-right: 2vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #pageBody__projectBar__header{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    #mobileScrollInstructions{
+        display: block;
+        font-size: 1rem;
+        color: gray;
     }
     #pageBody__projectBar__wrapper{
         overflow-x: scroll;
@@ -74,26 +88,48 @@ Also possible:
 /*Desktop Orientation*/
 @media (min-aspect-ratio: 3/4){
     #pageBody__projectBar{
+        position: relative;
         display: flex;
         flex-direction: column;
-        width: 20vw;
+        width: 15vw;
         z-index: 10;
         
         align-items: center;
         margin-top: 0;
         margin-bottom: 0;
+        padding: 0;
     }
-    #pageBody__projectBar__header{
+    #pageBody__projectBar__headerWrapper{
         border-bottom: 1px solid white;
         margin: 0;
         margin-bottom: 2vh;
-        padding-bottom: 1vh;
+        width: 100%;
+    }
+
+    #mobileScrollInstructions{
+        display: none;
+    }
+    #pageBody__projectBar__wrapper{
+        position: relative;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        width: 15vw;
+        
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    #pageBody__projectBar__header{
         width: 100%;
         text-align: center;
     }
     
     .project-menu-button{
-        width: 15vw;
+        width: 13vw;
         padding: 4%;
         margin-bottom: 2vh;
         box-sizing: border-box;
@@ -123,24 +159,49 @@ Also possible:
 
 
 /*NAVIGATION MENU*/
-#navMenu{
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 10;
-
-    box-sizing: border-box;
-    height: 100vh;
-    width: 5rem;
-    overflow: hidden;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+/*MOBILE ORIENTATION*/
+@media (max-aspect-ratio: 3/4){
+    #navMenu{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    
+        box-sizing: border-box;
+        height: 40vh;
+        width: 5rem;
+        overflow: hidden;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
 }
+/*DESKTOP ORIENTATION*/
+@media (min-aspect-ratio: 3/4){
+    #navMenu{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    
+        box-sizing: border-box;
+        height: 100vh;
+        width: 5rem;
+        overflow: hidden;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+}
+
 #navMenu__innerWrapper{
     display: flex;
     flex-direction: column;
@@ -170,16 +231,16 @@ a{
 }
 
 #navMenu__home:hover{
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 #navMenu__gmail:hover{
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 #navMenu__linkedin:hover{
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 #navMenu__github:hover{
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 /*COPYRIGHT DIV*/

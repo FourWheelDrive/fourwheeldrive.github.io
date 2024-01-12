@@ -30,7 +30,7 @@
 
     .projectImage{
         max-width: 100%;
-        height: auto;
+        width: auto;
     }
 }
 
@@ -53,10 +53,12 @@
     .projectImageWrapperMain{
         display: flex;
         flex-direction: row;
+        height: auto;
     }
     .projectImageWrapper{
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
+        height: auto;
     }
 
     .projectImageCaption{
@@ -66,12 +68,15 @@
     }
 
     .projectImage{
-        max-width: 50%;
+        display: block;
+        max-width: 30vw;
+        width: auto;
         height: auto;
     }
 }
 
 .projectTitleWrapper {
+    position: relative;
     grid-area: title;
     display: flex;
     flex-direction: row;
@@ -92,9 +97,12 @@
 }
 
 .projectDate {
+    position: relative;
     font-size: 1rem;
-    margin-right: 10%;
+    margin-right: 5%;
     padding-top: 0.75rem;
+
+    text-align: right;
 }
 
 .projectLink {

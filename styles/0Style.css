@@ -1,3 +1,7 @@
 #inspectorProfile{
     max-width: 350px;
 }
+#inspectorSheet{
+    height: 30vh;
+    width: auto;
+}
