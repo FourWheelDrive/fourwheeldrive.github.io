@@ -14,12 +14,13 @@ Also possible:
         flex-direction: row;
         width: 85%;
         height: auto;
+        scroll-snap-type: x proximity;
 
         margin-bottom: 3vh;
         align-self: flex-start;
         overflow-y: hidden;
         overflow-x: auto;
-
+        
         z-index: 10;
         
         align-items: center;
