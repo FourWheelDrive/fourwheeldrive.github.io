@@ -65,6 +65,7 @@ Also possible:
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
+        scroll-snap-align: center;
 
         white-space: nowrap;
     
